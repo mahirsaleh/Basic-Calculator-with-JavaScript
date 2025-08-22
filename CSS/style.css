@@ -1,0 +1,107 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-size: 50px ;
+}
+
+:root {
+    --header-padding: 0px 5px ;
+    --header-border: 2px ;
+    --header-border-bottom: 1px ;
+    /* --header-gap: 30px ; */
+    --header-padding-top: 50px ;
+
+    --info-font-size: 30px ;
+
+    --input-letter-spacing: 2px ;
+
+    --main-border: 1px ;
+
+    --button-padding: 20px ;
+    --button-border: 1px ;
+}
+
+body {
+    height: 100svh ;
+    display: grid ;
+    place-items: center ;
+    flex-direction: column ;
+    background: darkgray ;
+}
+
+.body-div {
+    display: flex ;
+    flex-direction: column;
+}
+
+.header__input {
+    border: none ;
+    outline: none ;
+    text-align: right ;
+    letter-spacing: var(--input-letter-spacing) ;
+}
+
+header {
+    display: flex ;
+    flex-direction: column ;
+    position: relative ;
+    /* gap: var(--header-gap) ; */
+    
+    background: white ;
+    padding: var(--header-padding) ;
+    padding-top: var(--header-padding-top) ;
+    border: var(--header-border) solid black ;
+    border-bottom: var(--header-border-bottom) solid black;
+}
+
+.header__info {
+    font-size: var(--info-font-size) ;
+    text-align: right ;
+    color: hsl(0, 0%, 40%) ;
+    user-select: none;
+    
+    position: absolute ;
+    top: 2% ;
+}
+
+.header__history {
+    right: 2% ;
+    overflow: auto ;
+}
+
+.header__info {
+    left: 2% ; 
+}
+
+main {
+    border: var(--main-border) solid black ;
+    border-top: none ;
+}
+
+main > section {
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    cursor: pointer ;
+    padding: var(--button-padding) ;
+    border: var(--button-border) solid black ;
+    background: hsl(177, 70%, 40%) ;
+    transition: background 0.15s ;
+    user-select: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: hsl(177, 70%, 45%);
+}
+
+button.color-button {
+    background-color: hsl(17, 100%, 72%);
+}
+
+button.color-button:hover {
+    background-color: hsl(17, 100%, 77%);
+}

@@ -1,0 +1,92 @@
+@media (max-width: 699px) {
+    * {
+        font-size: 40px ;
+    }
+
+    :root {
+        --info-font-size: 25px ;
+    }
+}
+
+@media (max-width: 549px) {
+    * {
+        font-size: 30px ;
+    }
+
+    :root {
+        --info-font-size: 20px ;
+
+        --header-padding-top: 40px ;
+    }
+}
+
+@media (max-width: 399px) {
+    * {
+        font-size: 25px ;
+    }
+
+    :root {
+        --header-border: 2px ;
+        --header-border-bottom: 0.5px ;
+        --header-padding-top: 35px ;
+
+        --info-font-size: 20px ;
+
+        --input-letter-spacing: 1px ;
+
+        --main-border: 0.5px ;
+
+        --button-border: 0.5px ;
+    }
+
+    /* header {
+        width: 300px ;
+    } */
+}
+
+/* Large Device */
+
+@media (min-width: 2500px) {
+    * {
+        font-size: 100px ;
+    }
+
+    :root {
+        --header-padding: 0px 20px ;
+        --header-border: 5px ;
+        --header-border-bottom: 2.5px ;
+        /* --header-gap: 30px ; */
+        --header-padding-top: 80px ;
+
+        --info-font-size: 50px ;
+
+        --input-letter-spacing: 2px ;
+
+        --main-border: 2.5px ;
+
+        --button-padding: 35px ;
+        --button-border: 2.5px ;
+    }
+}
+
+@media (min-width: 4500px) {
+    * {
+        font-size: 200px ;
+    }
+
+    :root {
+        --header-padding: 0px 35px ;
+        --header-border: 10px ;
+        --header-border-bottom: 5px ;
+        --header-padding-top: 150px ;
+
+        --info-font-size: 100px ;
+
+        --input-letter-spacing: 5px ;
+
+        --main-border: 4px ;
+
+        --button-padding: 60px ;
+        --button-border: 4px ;
+    }
+}
